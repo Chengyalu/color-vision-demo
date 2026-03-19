@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Demo</title>
+  <title>Color Vision Deficiency Enhancement Demo</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -13,13 +13,16 @@
       text-align: center;
       line-height: 1.6;
       color: #222;
+      background: #f7f7f7;
     }
     h1 {
       margin-bottom: 8px;
+      font-size: 2.2rem;
     }
     p {
       color: #555;
       margin-bottom: 24px;
+      font-size: 1.05rem;
     }
     .video-box {
       margin: 0 auto;
@@ -29,20 +32,40 @@
       max-width: 900px;
       border-radius: 12px;
       box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+      background: #000;
+    }
+    .links {
+      margin-top: 24px;
+    }
+    .links a {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 10px 18px;
+      text-decoration: none;
+      color: white;
+      background: #222;
+      border-radius: 8px;
+      font-size: 0.95rem;
+    }
+    .links a:hover {
+      background: #444;
     }
   </style>
 </head>
 <body>
   <h1>Color Vision Deficiency Enhancement Demo</h1>
-  <p>
-    A short demonstration video of the project.
-  </p>
+  <p>A short demonstration video of the project.</p>
 
   <div class="video-box">
-    <video controls preload="metadata">
+    <video controls preload="metadata" playsinline>
       <source src="Color-Vision-Deficiency-Enhancement.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
+  </div>
+
+  <div class="links">
+    <a href="Color-Vision-Deficiency-Enhancement.mp4" target="_blank">Open Video</a>
+    <a href="https://github.com/Chengyalu/color-vision-demo" target="_blank">View Repository</a>
   </div>
 </body>
 </html>
